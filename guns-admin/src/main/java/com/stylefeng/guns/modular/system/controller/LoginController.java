@@ -118,7 +118,7 @@ public class LoginController extends BaseController {
 
         ShiroKit.getSession().setAttribute("sessionFlag", true);
 
-        return REDIRECT + "/wallpaper";
+        return REDIRECT + "/";
     }
 
     /**
