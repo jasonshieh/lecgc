@@ -132,7 +132,7 @@ public class ShiroConfig {
         /**
          * 登陆成功后跳转的url
          */
-        shiroFilter.setSuccessUrl("/");
+        shiroFilter.setSuccessUrl("/wallpaper");
         /**
          * 没有权限跳转的url
          */
