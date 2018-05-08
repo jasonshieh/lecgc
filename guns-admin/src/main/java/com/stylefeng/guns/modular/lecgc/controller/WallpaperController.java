@@ -44,6 +44,18 @@ public class WallpaperController extends BaseController {
     }
 
     /**
+     * 跳转到添加墙布管理
+     */
+    @RequestMapping("/wallpaper_user")
+    public String wallpaperUser(@RequestParam("phone") String phone, @RequestParam("name") String name, @RequestParam("address") String address, Model model) {
+
+        model.addAttribute("name", name);
+        model.addAttribute("phone", phone);
+        model.addAttribute("address", address);
+        return PREFIX + "saler.html";
+    }
+
+    /**
      * 跳转到修改墙布管理
      */
     @RequestMapping("/wallpaper_update/{wallpaperId}")
